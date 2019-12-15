@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		246C06EC5B1BEA3D78588D55 /* Pods_DrawBoardTianTianNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F05D4A7C1D83A789D09D6 /* Pods_DrawBoardTianTianNew.framework */; };
+		8A39FF7F23A4D7D6009BF22F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */; };
+		8A39FF8123A4D7D6009BF22F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF8023A4D7D6009BF22F /* SceneDelegate.swift */; };
+		8A39FF8323A4D7D6009BF22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF8223A4D7D6009BF22F /* ViewController.swift */; };
+		8A39FF8623A4D7D6009BF22F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8423A4D7D6009BF22F /* Main.storyboard */; };
+		8A39FF8823A4D7D9009BF22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8723A4D7D9009BF22F /* Assets.xcassets */; };
+		8A39FF8B23A4D7D9009BF22F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8923A4D7D9009BF22F /* LaunchScreen.storyboard */; };
+		8A39FF9623A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF9523A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift */; };
+		8A39FFA123A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A39FF9223A4D7D9009BF22F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A39FF7323A4D7D6009BF22F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A39FF7A23A4D7D6009BF22F;
+			remoteInfo = DrawBoardTianTianNew;
+		};
+		8A39FF9D23A4D7D9009BF22F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A39FF7323A4D7D6009BF22F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A39FF7A23A4D7D6009BF22F;
+			remoteInfo = DrawBoardTianTianNew;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		051F05D4A7C1D83A789D09D6 /* Pods_DrawBoardTianTianNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrawBoardTianTianNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ACF6CB01E421144DFDE4A1 /* Pods-DrawBoardTianTianNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoardTianTianNew.release.xcconfig"; path = "Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew.release.xcconfig"; sourceTree = "<group>"; };
+		8A39FF7B23A4D7D6009BF22F /* 天天画写板.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "天天画写板.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A39FF8023A4D7D6009BF22F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8A39FF8223A4D7D6009BF22F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A39FF8523A4D7D6009BF22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A39FF8723A4D7D9009BF22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A39FF8A23A4D7D9009BF22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A39FF8C23A4D7D9009BF22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A39FF9123A4D7D9009BF22F /* DrawBoardTianTianNewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawBoardTianTianNewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A39FF9523A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardTianTianNewTests.swift; sourceTree = "<group>"; };
+		8A39FF9723A4D7D9009BF22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A39FF9C23A4D7D9009BF22F /* DrawBoardTianTianNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawBoardTianTianNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardTianTianNewUITests.swift; sourceTree = "<group>"; };
+		8A39FFA223A4D7D9009BF22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0978B102B2360ECCA0E40FC /* Pods-DrawBoardTianTianNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoardTianTianNew.debug.xcconfig"; path = "Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A39FF7823A4D7D6009BF22F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246C06EC5B1BEA3D78588D55 /* Pods_DrawBoardTianTianNew.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A39FF8E23A4D7D9009BF22F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A39FF9923A4D7D9009BF22F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B8751F0FC4E829DD682585B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				051F05D4A7C1D83A789D09D6 /* Pods_DrawBoardTianTianNew.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B387920E3D39C2EBF9F06B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0978B102B2360ECCA0E40FC /* Pods-DrawBoardTianTianNew.debug.xcconfig */,
+				61ACF6CB01E421144DFDE4A1 /* Pods-DrawBoardTianTianNew.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8A39FF7223A4D7D6009BF22F = {
+			isa = PBXGroup;
+			children = (
+				8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */,
+				8A39FF9423A4D7D9009BF22F /* DrawBoardTianTianNewTests */,
+				8A39FF9F23A4D7D9009BF22F /* DrawBoardTianTianNewUITests */,
+				8A39FF7C23A4D7D6009BF22F /* Products */,
+				7B387920E3D39C2EBF9F06B7 /* Pods */,
+				2B8751F0FC4E829DD682585B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A39FF7C23A4D7D6009BF22F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A39FF7B23A4D7D6009BF22F /* 天天画写板.app */,
+				8A39FF9123A4D7D9009BF22F /* DrawBoardTianTianNewTests.xctest */,
+				8A39FF9C23A4D7D9009BF22F /* DrawBoardTianTianNewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */ = {
+			isa = PBXGroup;
+			children = (
+				8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */,
+				8A39FF8023A4D7D6009BF22F /* SceneDelegate.swift */,
+				8A39FF8223A4D7D6009BF22F /* ViewController.swift */,
+				8A39FF8423A4D7D6009BF22F /* Main.storyboard */,
+				8A39FF8723A4D7D9009BF22F /* Assets.xcassets */,
+				8A39FF8923A4D7D9009BF22F /* LaunchScreen.storyboard */,
+				8A39FF8C23A4D7D9009BF22F /* Info.plist */,
+			);
+			path = DrawBoardTianTianNew;
+			sourceTree = "<group>";
+		};
+		8A39FF9423A4D7D9009BF22F /* DrawBoardTianTianNewTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A39FF9523A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift */,
+				8A39FF9723A4D7D9009BF22F /* Info.plist */,
+			);
+			path = DrawBoardTianTianNewTests;
+			sourceTree = "<group>";
+		};
+		8A39FF9F23A4D7D9009BF22F /* DrawBoardTianTianNewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */,
+				8A39FFA223A4D7D9009BF22F /* Info.plist */,
+			);
+			path = DrawBoardTianTianNewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A39FF7A23A4D7D6009BF22F /* DrawBoardTianTianNew */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A39FFA523A4D7D9009BF22F /* Build configuration list for PBXNativeTarget "DrawBoardTianTianNew" */;
+			buildPhases = (
+				9FA415C35382733A561D6FB3 /* [CP] Check Pods Manifest.lock */,
+				8A39FF7723A4D7D6009BF22F /* Sources */,
+				8A39FF7823A4D7D6009BF22F /* Frameworks */,
+				8A39FF7923A4D7D6009BF22F /* Resources */,
+				E7360BDC5CCBBC78A82883BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawBoardTianTianNew;
+			productName = DrawBoardTianTianNew;
+			productReference = 8A39FF7B23A4D7D6009BF22F /* 天天画写板.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A39FF9023A4D7D9009BF22F /* DrawBoardTianTianNewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A39FFA823A4D7D9009BF22F /* Build configuration list for PBXNativeTarget "DrawBoardTianTianNewTests" */;
+			buildPhases = (
+				8A39FF8D23A4D7D9009BF22F /* Sources */,
+				8A39FF8E23A4D7D9009BF22F /* Frameworks */,
+				8A39FF8F23A4D7D9009BF22F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A39FF9323A4D7D9009BF22F /* PBXTargetDependency */,
+			);
+			name = DrawBoardTianTianNewTests;
+			productName = DrawBoardTianTianNewTests;
+			productReference = 8A39FF9123A4D7D9009BF22F /* DrawBoardTianTianNewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A39FF9B23A4D7D9009BF22F /* DrawBoardTianTianNewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A39FFAB23A4D7D9009BF22F /* Build configuration list for PBXNativeTarget "DrawBoardTianTianNewUITests" */;
+			buildPhases = (
+				8A39FF9823A4D7D9009BF22F /* Sources */,
+				8A39FF9923A4D7D9009BF22F /* Frameworks */,
+				8A39FF9A23A4D7D9009BF22F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A39FF9E23A4D7D9009BF22F /* PBXTargetDependency */,
+			);
+			name = DrawBoardTianTianNewUITests;
+			productName = DrawBoardTianTianNewUITests;
+			productReference = 8A39FF9C23A4D7D9009BF22F /* DrawBoardTianTianNewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A39FF7323A4D7D6009BF22F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Yang Liu";
+				TargetAttributes = {
+					8A39FF7A23A4D7D6009BF22F = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					8A39FF9023A4D7D9009BF22F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8A39FF7A23A4D7D6009BF22F;
+					};
+					8A39FF9B23A4D7D9009BF22F = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 8A39FF7A23A4D7D6009BF22F;
+					};
+				};
+			};
+			buildConfigurationList = 8A39FF7623A4D7D6009BF22F /* Build configuration list for PBXProject "DrawBoardTianTianNew" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A39FF7223A4D7D6009BF22F;
+			productRefGroup = 8A39FF7C23A4D7D6009BF22F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A39FF7A23A4D7D6009BF22F /* DrawBoardTianTianNew */,
+				8A39FF9023A4D7D9009BF22F /* DrawBoardTianTianNewTests */,
+				8A39FF9B23A4D7D9009BF22F /* DrawBoardTianTianNewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A39FF7923A4D7D6009BF22F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A39FF8B23A4D7D9009BF22F /* LaunchScreen.storyboard in Resources */,
+				8A39FF8823A4D7D9009BF22F /* Assets.xcassets in Resources */,
+				8A39FF8623A4D7D6009BF22F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A39FF8F23A4D7D9009BF22F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A39FF9A23A4D7D9009BF22F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FA415C35382733A561D6FB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrawBoardTianTianNew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7360BDC5CCBBC78A82883BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A39FF7723A4D7D6009BF22F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A39FF8323A4D7D6009BF22F /* ViewController.swift in Sources */,
+				8A39FF7F23A4D7D6009BF22F /* AppDelegate.swift in Sources */,
+				8A39FF8123A4D7D6009BF22F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A39FF8D23A4D7D9009BF22F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A39FF9623A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A39FF9823A4D7D9009BF22F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A39FFA123A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A39FF9323A4D7D9009BF22F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A39FF7A23A4D7D6009BF22F /* DrawBoardTianTianNew */;
+			targetProxy = 8A39FF9223A4D7D9009BF22F /* PBXContainerItemProxy */;
+		};
+		8A39FF9E23A4D7D9009BF22F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A39FF7A23A4D7D6009BF22F /* DrawBoardTianTianNew */;
+			targetProxy = 8A39FF9D23A4D7D9009BF22F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A39FF8423A4D7D6009BF22F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A39FF8523A4D7D6009BF22F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A39FF8923A4D7D9009BF22F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A39FF8A23A4D7D9009BF22F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A39FFA323A4D7D9009BF22F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A39FFA423A4D7D9009BF22F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A39FFA623A4D7D9009BF22F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0978B102B2360ECCA0E40FC /* Pods-DrawBoardTianTianNew.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B625Q63YR4;
+				INFOPLIST_FILE = DrawBoardTianTianNew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinhuijiass.www.pinhuijiaDrawBoard;
+				PRODUCT_NAME = "天天画写板";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8A39FFA723A4D7D9009BF22F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ACF6CB01E421144DFDE4A1 /* Pods-DrawBoardTianTianNew.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B625Q63YR4;
+				INFOPLIST_FILE = DrawBoardTianTianNew/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinhuijiass.www.pinhuijiaDrawBoard;
+				PRODUCT_NAME = "天天画写板";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8A39FFA923A4D7D9009BF22F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DrawBoardTianTianNewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nmgdz.www.DrawBoardTianTianNewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawBoardTianTianNew.app/DrawBoardTianTianNew";
+			};
+			name = Debug;
+		};
+		8A39FFAA23A4D7D9009BF22F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = DrawBoardTianTianNewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nmgdz.www.DrawBoardTianTianNewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawBoardTianTianNew.app/DrawBoardTianTianNew";
+			};
+			name = Release;
+		};
+		8A39FFAC23A4D7D9009BF22F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B625Q63YR4;
+				INFOPLIST_FILE = DrawBoardTianTianNewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nmgdz.www.DrawBoardTianTianNewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawBoardTianTianNew;
+			};
+			name = Debug;
+		};
+		8A39FFAD23A4D7D9009BF22F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B625Q63YR4;
+				INFOPLIST_FILE = DrawBoardTianTianNewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nmgdz.www.DrawBoardTianTianNewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DrawBoardTianTianNew;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A39FF7623A4D7D6009BF22F /* Build configuration list for PBXProject "DrawBoardTianTianNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A39FFA323A4D7D9009BF22F /* Debug */,
+				8A39FFA423A4D7D9009BF22F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A39FFA523A4D7D9009BF22F /* Build configuration list for PBXNativeTarget "DrawBoardTianTianNew" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A39FFA623A4D7D9009BF22F /* Debug */,
+				8A39FFA723A4D7D9009BF22F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A39FFA823A4D7D9009BF22F /* Build configuration list for PBXNativeTarget "DrawBoardTianTianNewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A39FFA923A4D7D9009BF22F /* Debug */,
+				8A39FFAA23A4D7D9009BF22F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A39FFAB23A4D7D9009BF22F /* Build configuration list for PBXNativeTarget "DrawBoardTianTianNewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A39FFAC23A4D7D9009BF22F /* Debug */,
+				8A39FFAD23A4D7D9009BF22F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A39FF7323A4D7D6009BF22F /* Project object */;
+}
