@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Foundation
+
 import NXDrawKit
 import RSKImageCropper
 import AVFoundation
 import MobileCoreServices
+import Alamofire
 
 class ViewController: UIViewController {
     weak var canvasView: Canvas?
@@ -21,6 +24,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initialize()
+        self.loadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,6 +36,22 @@ class ViewController: UIViewController {
         self.setupPalette()
         self.setupToolBar()
     }
+    func loadData(){
+        
+        let url = "http://v.juhe.cn/toutiao/index?type=&key=48ee1d46f68f8d3e5012f24d505344b9"
+        
+        Alamofire.request(url).responseJSON { (response) in
+            switch response.result{
+            case .success(let json):
+                print(json)
+                break
+            case .failure(let error):
+                print("error:\(error)")
+            }
+        }
+        
+    
+    }
     
     override func viewWillLayoutSubviews() {
         let topMargin = UIApplication.shared.topSafeAreaMargin() + 50
@@ -40,22 +60,22 @@ class ViewController: UIViewController {
         let bottomMargin = UIApplication.shared.bottomSafeAreaMargin()
         let width = view.frame.width
         let height = view.frame.height
-//        self.canvasView?.backgroundColor = UIColor.red
+        //        self.canvasView?.backgroundColor = UIColor.red
         self.canvasView?.frame = CGRect(x: leftMargin,
                                         y: topMargin,
                                         width: width - (leftMargin + rightMargin),
                                         height: width - (leftMargin + rightMargin))
-
+        
         guard let paletteView = self.paletteView else {
             return
         }
-
+        
         let paletteHeight = paletteView.paletteHeight()
         paletteView.frame = CGRect(x: 0,
                                    y: height - (paletteHeight + bottomMargin),
                                    width: width,
                                    height: paletteHeight)
-
+        
         
         let toolBarHeight = paletteHeight * 0.25
         let startY = paletteView.frame.minY - toolBarHeight
@@ -113,23 +133,23 @@ class ViewController: UIViewController {
     @objc func onClickUndoButton() {
         self.canvasView?.undo()
     }
-
+    
     @objc func onClickRedoButton() {
         self.canvasView?.redo()
     }
-
+    
     @objc func onClickLoadButton() {
         self.showActionSheetForPhotoSelection()
     }
-
+    
     @objc func onClickSaveButton() {
         self.canvasView?.save()
     }
-
+    
     @objc func onClickClearButton() {
         self.canvasView?.clear()
     }
-
+    
     
     // MARK: - Image and Photo selection
     private func showActionSheetForPhotoSelection() {
@@ -150,14 +170,14 @@ class ViewController: UIViewController {
         let status = AVCaptureDevice.authorizationStatus(for: .video)
         
         switch (status) {
-            case .notDetermined:
-                self.presentImagePickerController()
-            case .restricted, .denied:
-                self.showAlertForImagePickerPermission()
-            case .authorized:
-                self.presentImagePickerController()
-            default:
-                return
+        case .notDetermined:
+            self.presentImagePickerController()
+        case .restricted, .denied:
+            self.showAlertForImagePickerPermission()
+        case .authorized:
+            self.presentImagePickerController()
+        default:
+            return
         }
     }
     
@@ -169,7 +189,7 @@ class ViewController: UIViewController {
     
     private func openSettings() {
         let url = URL(string: UIApplication.openSettingsURLString)
-        UIApplication.shared.openURL(url!)
+        UIApplication.shared.open(url!)
     }
     
     private func presentImagePickerController() {
@@ -212,16 +232,16 @@ extension ViewController: CanvasDelegate {
     
     func canvas(_ canvas: Canvas, didSaveDrawing drawing: Drawing, mergedImage image: UIImage?) {
         // you can save merged image
-//        if let pngImage = image?.asPNGImage() {
-//            UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
-//        }
+        //        if let pngImage = image?.asPNGImage() {
+        //            UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
+        //        }
         
         // you can save strokeImage
-//        if let pngImage = drawing.stroke?.asPNGImage() {
-//            UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
-//        }
+        //        if let pngImage = drawing.stroke?.asPNGImage() {
+        //            UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
+        //        }
         
-//        self.updateToolBarButtonStatus(canvas)
+        //        self.updateToolBarButtonStatus(canvas)
         
         // you can share your image with UIActivityViewController
         if let pngImage = image?.asPNGImage() {
@@ -231,7 +251,7 @@ extension ViewController: CanvasDelegate {
                     // User canceled
                     return
                 }
-
+                
                 if activityType == UIActivity.ActivityType.saveToCameraRoll {
                     let alert = UIAlertController(title: nil, message: "Image is saved successfully", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default))
@@ -256,14 +276,14 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         guard let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
             return
         }
-
+        
         picker.dismiss(animated: true, completion: { [weak self] in
             let cropper = RSKImageCropViewController(image:selectedImage, cropMode:.square)
             cropper.delegate = self
             self?.present(cropper, animated: true, completion: nil)
         })
     }
-
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
@@ -313,19 +333,19 @@ extension ViewController: UIAlertViewDelegate {
 
 // MARK: - PaletteDelegate
 extension ViewController: PaletteDelegate {
-//    func didChangeBrushColor(color: UIColor) {
-//
-//    }
-//
-//    func didChangeBrushAlpha(alpha: CGFloat) {
-//
-//    }
-//
-//    func didChangeBrushWidth(width: CGFloat) {
-//
-//    }
+    //    func didChangeBrushColor(color: UIColor) {
+    //
+    //    }
+    //
+    //    func didChangeBrushAlpha(alpha: CGFloat) {
+    //
+    //    }
+    //
+    //    func didChangeBrushWidth(width: CGFloat) {
+    //
+    //    }
     
-
+    
     // tag can be 1 ... 12
     func colorWithTag(_ tag: NSInteger) -> UIColor? {
         if tag == 4 {
@@ -336,17 +356,17 @@ extension ViewController: PaletteDelegate {
     }
     
     // tag can be 1 ... 4
-//    func widthWithTag(tag: NSInteger) -> CGFloat {
-//        if tag == 1 {
-//            return 5.0
-//        }
-//        return -1
-//    }
-
+    //    func widthWithTag(tag: NSInteger) -> CGFloat {
+    //        if tag == 1 {
+    //            return 5.0
+    //        }
+    //        return -1
+    //    }
+    
     // tag can be 1 ... 3
-//    func alphaWithTag(tag: NSInteger) -> CGFloat {
-//        return -1
-//    }
+    //    func alphaWithTag(tag: NSInteger) -> CGFloat {
+    //        return -1
+    //    }
 }
 
 

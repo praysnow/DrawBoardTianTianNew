@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		246C06EC5B1BEA3D78588D55 /* Pods_DrawBoardTianTianNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051F05D4A7C1D83A789D09D6 /* Pods_DrawBoardTianTianNew.framework */; };
 		8A39FF7F23A4D7D6009BF22F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */; };
-		8A39FF8123A4D7D6009BF22F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF8023A4D7D6009BF22F /* SceneDelegate.swift */; };
 		8A39FF8323A4D7D6009BF22F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF8223A4D7D6009BF22F /* ViewController.swift */; };
 		8A39FF8623A4D7D6009BF22F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8423A4D7D6009BF22F /* Main.storyboard */; };
 		8A39FF8823A4D7D9009BF22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8723A4D7D9009BF22F /* Assets.xcassets */; };
 		8A39FF8B23A4D7D9009BF22F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8923A4D7D9009BF22F /* LaunchScreen.storyboard */; };
 		8A39FF9623A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF9523A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift */; };
 		8A39FFA123A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */; };
+		8ACD7D0823A87A720014C9A8 /* TimeStampExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		61ACF6CB01E421144DFDE4A1 /* Pods-DrawBoardTianTianNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoardTianTianNew.release.xcconfig"; path = "Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew.release.xcconfig"; sourceTree = "<group>"; };
 		8A39FF7B23A4D7D6009BF22F /* 天天画写板.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "天天画写板.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8A39FF8023A4D7D6009BF22F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8A39FF8223A4D7D6009BF22F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8A39FF8523A4D7D6009BF22F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A39FF8723A4D7D9009BF22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		8A39FF9C23A4D7D9009BF22F /* DrawBoardTianTianNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawBoardTianTianNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardTianTianNewUITests.swift; sourceTree = "<group>"; };
 		8A39FFA223A4D7D9009BF22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampExtension.swift; sourceTree = "<group>"; };
 		A0978B102B2360ECCA0E40FC /* Pods-DrawBoardTianTianNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoardTianTianNew.debug.xcconfig"; path = "Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +101,7 @@
 		8A39FF7223A4D7D6009BF22F = {
 			isa = PBXGroup;
 			children = (
+				8ACD7D0623A879C70014C9A8 /* Third */,
 				8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */,
 				8A39FF9423A4D7D9009BF22F /* DrawBoardTianTianNewTests */,
 				8A39FF9F23A4D7D9009BF22F /* DrawBoardTianTianNewUITests */,
@@ -124,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */,
-				8A39FF8023A4D7D6009BF22F /* SceneDelegate.swift */,
 				8A39FF8223A4D7D6009BF22F /* ViewController.swift */,
 				8A39FF8423A4D7D6009BF22F /* Main.storyboard */,
 				8A39FF8723A4D7D9009BF22F /* Assets.xcassets */,
@@ -150,6 +150,14 @@
 				8A39FFA223A4D7D9009BF22F /* Info.plist */,
 			);
 			path = DrawBoardTianTianNewUITests;
+			sourceTree = "<group>";
+		};
+		8ACD7D0623A879C70014C9A8 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,9 +335,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ACD7D0823A87A720014C9A8 /* TimeStampExtension.swift in Sources */,
 				8A39FF8323A4D7D6009BF22F /* ViewController.swift in Sources */,
 				8A39FF7F23A4D7D6009BF22F /* AppDelegate.swift in Sources */,
-				8A39FF8123A4D7D6009BF22F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
