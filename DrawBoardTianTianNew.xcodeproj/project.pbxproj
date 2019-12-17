@@ -101,7 +101,6 @@
 		8A39FF7223A4D7D6009BF22F = {
 			isa = PBXGroup;
 			children = (
-				8ACD7D0623A879C70014C9A8 /* Third */,
 				8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */,
 				8A39FF9423A4D7D9009BF22F /* DrawBoardTianTianNewTests */,
 				8A39FF9F23A4D7D9009BF22F /* DrawBoardTianTianNewUITests */,
@@ -124,6 +123,7 @@
 		8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */ = {
 			isa = PBXGroup;
 			children = (
+				8ACD7D0623A879C70014C9A8 /* Third */,
 				8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */,
 				8A39FF8223A4D7D6009BF22F /* ViewController.swift */,
 				8A39FF8423A4D7D6009BF22F /* Main.storyboard */,
