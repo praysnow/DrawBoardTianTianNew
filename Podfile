@@ -9,5 +9,7 @@ target 'DrawBoardTianTianNew' do
   pod 'NXDrawKit'
   pod 'Alamofire'
   pod 'RSKImageCropper'
-  
+  pod 'SnapKit'
+  pod 'SwifterSwift'
+  pod 'Then'
 end

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  NXDrawKit
 //
-//  Created by Nicejinux on 2016. 7. 12..
-//  Copyright © 2016년 Nicejinux. All rights reserved.
+//  Created by Caesar on 2019. 12. 12..
+//  Copyright © 2019. All rights reserved.
 //
 
 import UIKit
@@ -14,6 +14,8 @@ import RSKImageCropper
 import AVFoundation
 import MobileCoreServices
 import Alamofire
+import SnapKit
+import Then
 
 class ViewController: UIViewController {
     weak var canvasView: Canvas?
@@ -23,8 +25,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.initNavigationTitleFong()
         self.initialize()
         self.loadData()
+    }
+    func initNavigationTitleFong() {
+        self.navigationItem.title = "王子的新衣"
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,29 +48,19 @@ class ViewController: UIViewController {
         
         Alamofire.request(url).responseJSON { (response) in
             switch response.result{
-            case .success(let json):
-                print(json)
+            case .success( _):
+                //                print(json)
                 break
             case .failure(let error):
                 print("error:\(error)")
             }
         }
-        
-    
     }
     
     override func viewWillLayoutSubviews() {
-        let topMargin = UIApplication.shared.topSafeAreaMargin() + 50
-        let leftMargin = UIApplication.shared.leftSafeAreaMargin() + 20
-        let rightMargin = UIApplication.shared.rightSafeAreaMargin() + 20
         let bottomMargin = UIApplication.shared.bottomSafeAreaMargin()
         let width = view.frame.width
         let height = view.frame.height
-        //        self.canvasView?.backgroundColor = UIColor.red
-        self.canvasView?.frame = CGRect(x: leftMargin,
-                                        y: topMargin,
-                                        width: width - (leftMargin + rightMargin),
-                                        height: width - (leftMargin + rightMargin))
         
         guard let paletteView = self.paletteView else {
             return
@@ -76,16 +72,27 @@ class ViewController: UIViewController {
                                    width: width,
                                    height: paletteHeight)
         
-        
+        let margin = 20
         let toolBarHeight = paletteHeight * 0.25
         let startY = paletteView.frame.minY - toolBarHeight
         self.toolBar?.frame = CGRect(x: 0, y: startY, width: width, height: toolBarHeight)
         
         self.bottomView?.frame = CGRect(x: 0, y: paletteView.frame.maxY, width: width, height: bottomMargin)
+        self.canvasView!.backgroundColor = UIColor.white
+        self.canvasView?.snp.makeConstraints({ (make) in
+            let naviBarHeight = (self.navigationController?.navigationBar.frame.size.height)!+UIApplication.shared.statusBarFrame.size.height + 20
+            make.top.equalTo(naviBarHeight)
+            make.left.equalTo(margin)
+            make.right.equalTo(-margin)
+            make.bottom.equalTo(((self.toolBar?.snp.top ?? nil) ?? nil)!).offset(-margin)
+            _ = UIView().then {(love) in
+                love.backgroundColor = UIColor.purple
+            }
+        })
     }
-    
+    //设置默认画板背景
     private func setupPalette() {
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.yellow
         
         let paletteView = Palette()
         paletteView.delegate = self
@@ -97,6 +104,7 @@ class ViewController: UIViewController {
         bottomView.backgroundColor = UIColor(red: 0.22, green: 0.22, blue: 0.21, alpha: 1.0)
         self.view.addSubview(bottomView)
         self.bottomView = bottomView
+        
     }
     
     private func setupToolBar() {
@@ -189,7 +197,11 @@ class ViewController: UIViewController {
     
     private func openSettings() {
         let url = URL(string: UIApplication.openSettingsURLString)
-        UIApplication.shared.open(url!)
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url!)
+        } else {
+            // Fallback on earlier versions
+        }
     }
     
     private func presentImagePickerController() {
@@ -231,19 +243,7 @@ extension ViewController: CanvasDelegate {
     }
     
     func canvas(_ canvas: Canvas, didSaveDrawing drawing: Drawing, mergedImage image: UIImage?) {
-        // you can save merged image
-        //        if let pngImage = image?.asPNGImage() {
-        //            UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
-        //        }
         
-        // you can save strokeImage
-        //        if let pngImage = drawing.stroke?.asPNGImage() {
-        //            UIImageWriteToSavedPhotosAlbum(pngImage, self, #selector(ViewController.image(_:didFinishSavingWithError:contextInfo:)), nil)
-        //        }
-        
-        //        self.updateToolBarButtonStatus(canvas)
-        
-        // you can share your image with UIActivityViewController
         if let pngImage = image?.asPNGImage() {
             let activityViewController = UIActivityViewController(activityItems: [pngImage], applicationActivities: nil)
             activityViewController.completionWithItemsHandler = {(activityType: UIActivity.ActivityType?, completed: Bool, returnedItems: [Any]?, error: Error?) in

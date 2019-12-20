@@ -27,12 +27,20 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>使用相机</string>
 	<key>NSMainStoryboardFile</key>
 	<string>ViewController</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>画写板想要保存相片</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchImage</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
