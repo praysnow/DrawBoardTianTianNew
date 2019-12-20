@@ -13,6 +13,7 @@
 		8A39FF8823A4D7D9009BF22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A39FF8723A4D7D9009BF22F /* Assets.xcassets */; };
 		8A39FF9623A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FF9523A4D7D9009BF22F /* DrawBoardTianTianNewTests.swift */; };
 		8A39FFA123A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */; };
+		8AA2FF0E23AC8050001523EA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2FF0D23AC8050001523EA /* Common.swift */; };
 		8ACD7D0823A87A720014C9A8 /* TimeStampExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		8A39FF9C23A4D7D9009BF22F /* DrawBoardTianTianNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawBoardTianTianNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawBoardTianTianNewUITests.swift; sourceTree = "<group>"; };
 		8A39FFA223A4D7D9009BF22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AA2FF0D23AC8050001523EA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampExtension.swift; sourceTree = "<group>"; };
 		A0978B102B2360ECCA0E40FC /* Pods-DrawBoardTianTianNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoardTianTianNew.debug.xcconfig"; path = "Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */ = {
 			isa = PBXGroup;
 			children = (
+				8AA2FF0C23AC8040001523EA /* Common */,
 				8ACD7D0623A879C70014C9A8 /* Third */,
 				8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */,
 				8A39FF8223A4D7D6009BF22F /* ViewController.swift */,
@@ -145,6 +148,14 @@
 			);
 			path = DrawBoardTianTianNewUITests;
 			sourceTree = "<group>";
+		};
+		8AA2FF0C23AC8040001523EA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8AA2FF0D23AC8050001523EA /* Common.swift */,
+			);
+			path = Common;
+			sourceTree = SOURCE_ROOT;
 		};
 		8ACD7D0623A879C70014C9A8 /* Third */ = {
 			isa = PBXGroup;
@@ -327,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA2FF0E23AC8050001523EA /* Common.swift in Sources */,
 				8ACD7D0823A87A720014C9A8 /* TimeStampExtension.swift in Sources */,
 				8A39FF8323A4D7D6009BF22F /* ViewController.swift in Sources */,
 				8A39FF7F23A4D7D6009BF22F /* AppDelegate.swift in Sources */,
@@ -493,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.14;
+				MARKETING_VERSION = 2.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinhuijiass.www.pinhuijiaDrawBoard;
 				PRODUCT_NAME = "天天画写板";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -516,7 +528,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.14;
+				MARKETING_VERSION = 2.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinhuijiass.www.pinhuijiaDrawBoard;
 				PRODUCT_NAME = "天天画写板";
 				PROVISIONING_PROFILE_SPECIFIER = "";

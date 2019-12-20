@@ -10,6 +10,10 @@ target 'DrawBoardTianTianNew' do
   pod 'Alamofire'
   pod 'RSKImageCropper'
   pod 'SnapKit'
+  #扩展
   pod 'SwifterSwift'
+  pod 'PKHUD'
+  pod 'DynamicColor'
   pod 'Then'
+
 end

@@ -8,7 +8,6 @@
 
 import UIKit
 import Foundation
-
 import NXDrawKit
 import RSKImageCropper
 import AVFoundation
@@ -16,6 +15,8 @@ import MobileCoreServices
 import Alamofire
 import SnapKit
 import Then
+import PKHUD
+import SwifterSwift
 
 class ViewController: UIViewController {
     weak var canvasView: Canvas?
@@ -31,6 +32,11 @@ class ViewController: UIViewController {
     }
     func initNavigationTitleFong() {
         self.navigationItem.title = "王子的新衣"
+//        let alert = UIAlertController(title: "提示", message:"测试") alert.show()
+        //颜_哈
+        _ = UIColor(hex: 0x45C91B)
+//        UIButton().setTitlcceForAllStates( "登陆")
+        HUD.flash(.rotatingImage(UIImage(named: "wangzi")), delay: 1)
     }
     
     override func didReceiveMemoryWarning() {
