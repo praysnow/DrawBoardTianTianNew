@@ -14,6 +14,9 @@ target 'DrawBoardTianTianNew' do
   pod 'SwifterSwift'
   pod 'PKHUD'
   pod 'DynamicColor'
+  #rx
   pod 'Then'
-
+  #tapbar
+  pod 'ESTabBarController-swift'
+  pod 'pop'
 end

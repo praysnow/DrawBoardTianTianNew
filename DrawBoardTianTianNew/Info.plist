@@ -28,7 +28,7 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>使用相机</string>
+	<string>画写板想要使用相机拍摄图片</string>
 	<key>NSMainStoryboardFile</key>
 	<string>ViewController</string>
 	<key>NSPhotoLibraryUsageDescription</key>

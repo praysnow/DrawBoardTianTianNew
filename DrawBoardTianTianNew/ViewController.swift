@@ -29,9 +29,10 @@ class ViewController: UIViewController {
         self.initNavigationTitleFong()
         self.initialize()
         self.loadData()
+        
     }
     func initNavigationTitleFong() {
-        self.navigationItem.title = "王子的新衣"
+        self.navigationItem.title = "小小画写板"
 //        let alert = UIAlertController(title: "提示", message:"测试") alert.show()
         //颜_哈
         _ = UIColor(hex: 0x45C91B)
@@ -74,7 +75,7 @@ class ViewController: UIViewController {
         
         let paletteHeight = paletteView.paletteHeight()
         paletteView.frame = CGRect(x: 0,
-                                   y: height - (paletteHeight + bottomMargin),
+                                   y: height - (paletteHeight + bottomMargin + 44),
                                    width: width,
                                    height: paletteHeight)
         
@@ -418,6 +419,3 @@ extension UIApplication {
         return leftSafeAreaMargin() + rightSafeAreaMargin()
     }
 }
-
-
-
