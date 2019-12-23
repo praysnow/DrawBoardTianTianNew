@@ -15,6 +15,10 @@
 		8A39FFA123A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A39FFA023A4D7D9009BF22F /* DrawBoardTianTianNewUITests.swift */; };
 		8AA2FF0E23AC8050001523EA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA2FF0D23AC8050001523EA /* Common.swift */; };
 		8ACD7D0823A87A720014C9A8 /* TimeStampExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */; };
+		8AF8D22B23AF0AD000A54ED6 /* TTBaseTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8D22A23AF0AD000A54ED6 /* TTBaseTabBarVC.swift */; };
+		8AF8D22E23AF100E00A54ED6 /* BCIrregularityBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8D22D23AF100E00A54ED6 /* BCIrregularityBasicContentView.swift */; };
+		8AF8D23023AF11C400A54ED6 /* BCBouncesContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8D22F23AF11C400A54ED6 /* BCBouncesContentView.swift */; };
+		8AF8D23223AF11D700A54ED6 /* BCBasicContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8D23123AF11D700A54ED6 /* BCBasicContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		8A39FFA223A4D7D9009BF22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AA2FF0D23AC8050001523EA /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStampExtension.swift; sourceTree = "<group>"; };
+		8AF8D22A23AF0AD000A54ED6 /* TTBaseTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTBaseTabBarVC.swift; sourceTree = "<group>"; };
+		8AF8D22D23AF100E00A54ED6 /* BCIrregularityBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCIrregularityBasicContentView.swift; sourceTree = "<group>"; };
+		8AF8D22F23AF11C400A54ED6 /* BCBouncesContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCBouncesContentView.swift; sourceTree = "<group>"; };
+		8AF8D23123AF11D700A54ED6 /* BCBasicContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCBasicContentView.swift; sourceTree = "<group>"; };
 		A0978B102B2360ECCA0E40FC /* Pods-DrawBoardTianTianNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrawBoardTianTianNew.debug.xcconfig"; path = "Target Support Files/Pods-DrawBoardTianTianNew/Pods-DrawBoardTianTianNew.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +129,8 @@
 		8A39FF7D23A4D7D6009BF22F /* DrawBoardTianTianNew */ = {
 			isa = PBXGroup;
 			children = (
+				8AF8D22C23AF100800A54ED6 /* tools */,
+				8AF8D22923AF0A7400A54ED6 /* TTBaseViewController */,
 				8AA2FF0C23AC8040001523EA /* Common */,
 				8ACD7D0623A879C70014C9A8 /* Third */,
 				8A39FF7E23A4D7D6009BF22F /* AppDelegate.swift */,
@@ -163,6 +173,24 @@
 				8ACD7D0723A87A720014C9A8 /* TimeStampExtension.swift */,
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		8AF8D22923AF0A7400A54ED6 /* TTBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8AF8D22A23AF0AD000A54ED6 /* TTBaseTabBarVC.swift */,
+			);
+			path = TTBaseViewController;
+			sourceTree = "<group>";
+		};
+		8AF8D22C23AF100800A54ED6 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				8AF8D23123AF11D700A54ED6 /* BCBasicContentView.swift */,
+				8AF8D22F23AF11C400A54ED6 /* BCBouncesContentView.swift */,
+				8AF8D22D23AF100E00A54ED6 /* BCIrregularityBasicContentView.swift */,
+			);
+			path = tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,10 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF8D23223AF11D700A54ED6 /* BCBasicContentView.swift in Sources */,
 				8AA2FF0E23AC8050001523EA /* Common.swift in Sources */,
 				8ACD7D0823A87A720014C9A8 /* TimeStampExtension.swift in Sources */,
+				8AF8D23023AF11C400A54ED6 /* BCBouncesContentView.swift in Sources */,
 				8A39FF8323A4D7D6009BF22F /* ViewController.swift in Sources */,
+				8AF8D22E23AF100E00A54ED6 /* BCIrregularityBasicContentView.swift in Sources */,
 				8A39FF7F23A4D7D6009BF22F /* AppDelegate.swift in Sources */,
+				8AF8D22B23AF0AD000A54ED6 /* TTBaseTabBarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +537,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.15;
+				MARKETING_VERSION = 2.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinhuijiass.www.pinhuijiaDrawBoard;
 				PRODUCT_NAME = "天天画写板";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -528,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.15;
+				MARKETING_VERSION = 2.17;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pinhuijiass.www.pinhuijiaDrawBoard;
 				PRODUCT_NAME = "天天画写板";
 				PROVISIONING_PROFILE_SPECIFIER = "";

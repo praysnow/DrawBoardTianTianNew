@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         //颜_哈
         _ = UIColor(hex: 0x45C91B)
 //        UIButton().setTitlcceForAllStates( "登陆")
-        HUD.flash(.rotatingImage(UIImage(named: "wangzi")), delay: 1)
+        HUD.flash(.rotatingImage(UIImage(named: "wangzi")), delay: 0.2)
     }
     
     override func didReceiveMemoryWarning() {
@@ -74,10 +74,16 @@ class ViewController: UIViewController {
         }
         
         let paletteHeight = paletteView.paletteHeight()
+        //不带导航栏的
         paletteView.frame = CGRect(x: 0,
-                                   y: height - (paletteHeight + bottomMargin + 44),
-                                   width: width,
-                                   height: paletteHeight)
+                                          y: height - (paletteHeight + bottomMargin),
+                                          width: width,
+                                          height: paletteHeight)
+        //带导航栏的
+//        paletteView.frame = CGRect(x: 0,
+//                                   y: height - (paletteHeight + bottomMargin + 44),
+//                                   width: width,
+//                                   height: paletteHeight)
         
         let margin = 20
         let toolBarHeight = paletteHeight * 0.25
@@ -402,16 +408,15 @@ extension UIApplication {
         if #available(iOS 11.0, *), let leftInset = keyWindow?.safeAreaInsets.left {
             leftMargin = leftInset
         }
-        
         return leftMargin
     }
     
     public func rightSafeAreaMargin() -> CGFloat {
+        
         var rightMargin: CGFloat = 0
         if #available(iOS 11.0, *), let rightInset = keyWindow?.safeAreaInsets.right {
             rightMargin = rightInset
         }
-        
         return rightMargin
     }
     

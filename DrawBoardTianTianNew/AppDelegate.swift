@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame:UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         //自定义tabBar入口
-        window?.rootViewController = TTBaseTabBarVC.tabbarWithNavigationStyle()
+//        window?.rootViewController = TTBaseTabBarVC.tabbarWithNavigationStyle()
 //        画写板入口
-//        window?.rootViewController = UINavigationController(rootViewController: ViewController())
+        window?.rootViewController = UINavigationController(rootViewController: ViewController())
         window?.makeKeyAndVisible()
         return true
     }
